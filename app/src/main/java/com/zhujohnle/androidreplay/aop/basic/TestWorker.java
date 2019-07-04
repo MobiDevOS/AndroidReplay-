@@ -1,4 +1,4 @@
-package com.zhujohnle.androidreplay.aop;
+package com.zhujohnle.androidreplay.aop.basic;
 
 /**
  * @auth &{zhujiule}

@@ -19,6 +19,36 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ipc.binder.client.ClientActivity" android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ipc.aidl.client.ClientActivity" android:screenOrientation="portrait">
+        </activity>
+
+        <!--使用binder测试ipc-->
+        <service
+            android:name=".ipc.binder.service.RemoteService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":binderRemote">
+
+            <intent-filter>
+                <action android:name="com.zhujohnle.androidreplay.ipc.binder" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </service>
+
+
+        <!--使用aidl测试ipc-->
+        <service android:name=".ipc.aidl.server.BookManagerService">
+            <intent-filter>
+                <action android:name="com.zhujohnle.androidreplay.ipc.aidl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
