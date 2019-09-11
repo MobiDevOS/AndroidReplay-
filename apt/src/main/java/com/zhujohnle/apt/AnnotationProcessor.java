@@ -3,6 +3,7 @@ package com.zhujohnle.apt;
 import com.google.auto.service.AutoService;
 import com.zhujohnle.annotation.InstanceFactory;
 import com.zhujohnle.annotation.bindview.$;
+import com.zhujohnle.apt.processor.BindViewProcessor;
 import com.zhujohnle.apt.processor.InstanceProcessor;
 
 import java.util.HashSet;
@@ -52,7 +53,7 @@ public class AnnotationProcessor extends AbstractProcessor {
         new InstanceProcessor().process(roundEnv, this);
         //new ApiFactoryProcessor().process(roundEnv, this);
        // new RouterProcessor().process(roundEnv, this);
-        //new BindViewProcessor().process(roundEnv,this);
+       new BindViewProcessor().process(roundEnv,this);
         return true;
     }
 }

@@ -1,6 +1,9 @@
 package com.zhujohnle.androidreplay;
 
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.zhujohnle.annotation.InstanceFactory;
 
 /**
@@ -10,4 +13,8 @@ import com.zhujohnle.annotation.InstanceFactory;
  **/
 @InstanceFactory
 public class MainPresenter  {
+
+   public void showToast(Context mContext){
+      Toast.makeText(mContext,"test",Toast.LENGTH_SHORT).show();
+   }
 }

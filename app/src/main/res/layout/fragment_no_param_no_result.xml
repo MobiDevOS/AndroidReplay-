@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+  >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txt_handle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="handle通信" />
+
+    <TextView
+        android:id="@+id/txt_noALl"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="无参数无返回值" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="无参数有返回值" />
+
+    <TextView
+        android:id="@+id/txt_param"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="有参数无返回值" />
+
+
+    <TextView
+        android:id="@+id/txt_withAll"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="有参数有返回值" />
+
+
+
+</LinearLayout>
